@@ -4,69 +4,82 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Summer of Shipping</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="inner-container">
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Summer of Shipping
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          🦠 Has your internship been cancelled?
+        </p>
+
+        <p className="description">
+          Are you planning on building anyways, but don't want to do it alone?
+        </p>
+
+        <p className="description">
+          Then you're in the perfect spot. We're a community of college students and industry mentors who are building this summer. We learn from each other. We meet on Thursdays for demos, presentations, and networking. The end goal is to make you similarly competitive to those who completed internships over the summer. 🚀
+        </p>
+
+        <p className="description">
+          <a href="https://forms.gle/3N3CfqbH6YkM1DF67"> Join us! </a>
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="card">
+            <h3>Join us! &rarr;</h3>
+            <p>Build with us this summer! </p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://www.youtube.com/watch?v=tfbaDguurH0" className="card">
+            <h3>Kickoff Video &rarr;</h3>
+            <p>Watch the kickoff on YouTube. Slides in the video description</p>
           </a>
 
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://twitter.com/summer_of_ship" className="card">
+            <h3>Twitter &rarr;</h3>
+            <p>Stay up to date with us on Twitter</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://forms.gle/3N3CfqbH6YkM1DF67"
             className="card"
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Become a Mentor &rarr;</h3>
+            <p>Experienced dev? Want to help out with Code Reviews?</p>
+          </a>
+
+          <a
+            href="https://docs.google.com/spreadsheets/d/1MdlCGpAAMbPb4VsLJUJLk8zlZ1dM9O_euiw0jFP6AdU/edit?usp=sharing"
+            className="card"
+          >
+            <h3>Team up &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Looking for collaborators? Find people at all stages of their projects
             </p>
           </a>
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
       <style jsx>{`
         .container {
+          background-color: #212121;
+          color: #adadad;
           min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          font-family: Monaco, monospace;
+        }
+
+        .inner-container {
+          max-width: 800px;
         }
 
         main {
@@ -103,7 +116,6 @@ export default function Home() {
         }
 
         .title a {
-          color: #0070f3;
           text-decoration: none;
         }
 
@@ -114,6 +126,7 @@ export default function Home() {
         }
 
         .title {
+          color: white;
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
@@ -125,8 +138,17 @@ export default function Home() {
         }
 
         .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
+          line-height: 1.4;
+          font-size: 1.2rem;
+        }
+
+        .description a {
+          text-decoration: none;
+          color: #4dd0e1;
+        }
+
+        .description a:hover {
+          color: white;
         }
 
         code {
@@ -152,6 +174,7 @@ export default function Home() {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
+          min-height: 12rem;
           text-align: left;
           color: inherit;
           text-decoration: none;
@@ -163,8 +186,7 @@ export default function Home() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #4dd0e1;
         }
 
         .card h3 {
