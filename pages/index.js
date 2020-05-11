@@ -46,7 +46,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://forms.gle/3N3CfqbH6YkM1DF67"
+            href="https://forms.gle/ybJ7pdF5Q3axZbrbA"
             className="card"
           >
             <h3>Become a Mentor &rarr;</h3>
