@@ -203,7 +203,7 @@ export default function Home() {
         }
 
         .button-primary {
-            color: white;
+            color: (33, 33, 33);
             background-color: rgba(77,208,225, 1);
             border-radius: 10px;
             padding: 10px;
