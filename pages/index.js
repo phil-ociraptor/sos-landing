@@ -25,9 +25,7 @@ export default function Home() {
           Then you're in the perfect spot. We're a community of college students and industry mentors who are building this summer. We learn from each other. We meet on Thursdays for demos, presentations, and networking. The end goal is to make you similarly competitive to those who completed internships over the summer. 🚀
         </p>
 
-        <p className="description">
-          <a href="https://forms.gle/3N3CfqbH6YkM1DF67"> Join us! </a>
-        </p>
+        <a className="button-primary" href="https://forms.gle/3N3CfqbH6YkM1DF67"> Join us! </a>
 
         <div className="grid">
           <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="card">
@@ -203,6 +201,21 @@ export default function Home() {
         .logo {
           height: 1em;
         }
+
+        .button-primary {
+            color: rgba(33, 33, 33, 1);
+            background-color: rgba(77,208,225, 1);
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 1.5rem;
+        }
+
+        .button-primary:active,
+        .button-primary:focus,
+        .button-primary:hover {
+          background-color: rgba(77,208,225, .75);
+        }
+
 
         @media (max-width: 600px) {
           .grid {
