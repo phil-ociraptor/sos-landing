@@ -86,14 +86,15 @@ export default function Home() {
         }
 
         .call-to-action {
-          width: 100%;
+          width: 40%;
           padding: 0.5rem;
           display: flex;
+          flex-direction: column;
           justify-content: center;
         }
 
         .call-to-action a {
-          margin: 0 5rem;
+          margin: 1rem 0;
         }
 
         main {
@@ -224,6 +225,15 @@ export default function Home() {
             border-radius: 10px;
             padding: 10px;
             font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .button-secondary {
+          color: rgba(33, 33, 33, 1);
+          background-color: rgba(77,208,225, 1);
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 1.5rem;
         }
 
         .button-primary:active,
