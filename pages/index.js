@@ -25,7 +25,12 @@ export default function Home() {
           Then you're in the perfect spot. We're a community of college students and industry mentors who are building this summer. We learn from each other. We meet on Thursdays for demos, presentations, and networking. The end goal is to make you similarly competitive to those who completed internships over the summer. 🚀
         </p>
 
-        <a className="button-primary" href="https://forms.gle/3N3CfqbH6YkM1DF67"> Join us! </a>
+        <div className="call-to-action">
+          <a className="button-primary" href="https://forms.gle/3N3CfqbH6YkM1DF67"> Join us! </a>
+
+          <a className="button-primary" href="https://forms.gle/ybJ7pdF5Q3axZbrbA"> Become a Mentor! </a>
+        </div>
+
 
         <div className="grid">
           <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="card">
@@ -78,6 +83,17 @@ export default function Home() {
 
         .inner-container {
           max-width: 800px;
+        }
+
+        .call-to-action {
+          width: 100%;
+          padding: 0.5rem;
+          display: flex;
+          justify-content: center;
+        }
+
+        .call-to-action a {
+          margin: 0 5rem;
         }
 
         main {
@@ -221,6 +237,16 @@ export default function Home() {
           .grid {
             width: 100%;
             flex-direction: column;
+          }
+
+          .call-to-action {
+            width: 45%;
+            flex-direction: column;
+          }
+          
+          .call-to-action a {
+            margin: 1rem 0;
+          }
           }
         }
       `}</style>
