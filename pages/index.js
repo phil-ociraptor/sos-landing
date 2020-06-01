@@ -257,7 +257,6 @@ export default function Home() {
           .call-to-action a {
             margin: 1rem 0;
           }
-          }
         }
       `}</style>
 
