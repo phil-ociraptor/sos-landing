@@ -26,7 +26,7 @@ export default function Home() {
         </p>
 
         <div className="call-to-action">
-          <a className="button-secondary" href="https://forms.gle/3N3CfqbH6YkM1DF67"> Join us! </a>
+          <a className="button-primary" href="https://forms.gle/3N3CfqbH6YkM1DF67"> Join us! </a>
 
           <a className="button-secondary" href="https://forms.gle/ybJ7pdF5Q3axZbrbA"> Become a Mentor! </a>
         </div>
@@ -234,6 +234,7 @@ export default function Home() {
           border-radius: 10px;
           padding: 10px;
           font-size: 1.5rem;
+          text-align: center
         }
 
         .button-primary:active,
