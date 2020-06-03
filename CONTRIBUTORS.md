@@ -12,6 +12,7 @@
 - [Example](https://github.com/phil-ociraptor)
 - [Van S.](https://github.com/Hi-Van)
 - [Omri](https://github.com/omri08)
+- [Omar Moghazy](https://github.com/OmarMoghazy)
 
 ### Designer
 
