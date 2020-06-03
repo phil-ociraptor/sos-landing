@@ -9,6 +9,7 @@
 ### UI Team
 - [Example](https://github.com/phil-ociraptor)
 - [Van S.](https://github.com/Hi-Van)
+- [Omar Moghazy](https://github.com/OmarMoghazy)
 
 ### Designer
 - [Example](https://github.com/phil-ociraptor)
