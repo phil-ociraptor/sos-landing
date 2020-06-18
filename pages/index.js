@@ -14,28 +14,23 @@ export default function Home() {
         <img src="undraw_operating_system_4lr6.svg" className="SVG" />
         <div className="grid">
 
-          <div className="socialcontainer">
-          <p className="PageTitle">WIKI PAGE</p>
-            <ul>
-              <li>
-                <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="social">
-                DISCORD
-                </a>
-              </li>
+          <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="social">
+            DISCORD
+          </a>
+          
+          <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="social">
+            TWITTER
+          </a>
+          
+          <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="social">
+            LINKEDIN
+          </a>
 
-              <li>
-                <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="social">
-                TWITTER
-                </a>
-              </li>
+          <p className="media">MEDIA</p>
 
-              <li>
-                <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="social">
-                LINKEDIN
-                </a>
-              </li>
-            </ul>
-          </div>
+          <p className="beginner">BEGINNER</p>
+
+          <p className="resources">RESOURCES</p>
 
           <div className="cardcontainer">
             <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="card">
@@ -56,6 +51,111 @@ export default function Home() {
             <a href="https://docs.google.com/spreadsheets/d/1MdlCGpAAMbPb4VsLJUJLk8zlZ1dM9O_euiw0jFP6AdU/edit?usp=sharing" className="card">
               <h3>Team up &rarr;</h3>
               <p>Looking for collaborators? Find people at all stages of their projects</p>
+            </a>
+          </div>
+
+          <div className="cardcontainer">
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardbeginner">
+              <h3>Beginner &rarr;</h3>
+              <p>Beginner name and description here </p>
+            </a>
+
+          </div>
+
+          <div className="cardcontainer">
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
+            </a>
+
+            <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="cardresources">
+              <h3>Resource &rarr;</h3>
+              <p>Resource name and description here </p>
             </a>
           </div>
         </div>
@@ -154,14 +254,13 @@ export default function Home() {
         flex-wrap: wrap;
         max-width: 100%;
         margin-top: 10rem;
-        justify-content:space-around; 
       }
 
       .cardcontainer {
         display: grid;
         justify-content: center;
-        width: 60%;
-        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+        width: 100%;
+        grid-template-columns: repeat( auto-fit, minmax(380px, 1fr) );
       }
 
       .card {
@@ -182,11 +281,47 @@ export default function Home() {
         transform: scale(1.03);
       }
 
-      .card h3 {
+      .cardbeginner {
+        background: linear-gradient(90deg, #B24592 0%, #F15F79 100%);
+        border-radius: 10px;
+        padding: 1em;
+        margin: 2em;
+        height: 12em;
+        text-decoration: none;
+        color: #EAEAEA;
+        box-shadow: 7.3118px 8.77416px 5.84944px rgba(0, 0, 0, 0.25);
+        transition: transform .6s ease;
+      }
+
+      .cardbeginner:hover,
+      .cardbeginner:focus,
+      .cardbeginner:active {
+        transform: scale(1.03);
+      }
+
+      .cardresources {
+        background: linear-gradient(90deg, #286d80 0%, #71B280 100%);
+        border-radius: 10px;
+        padding: 1em;
+        margin: 2em;
+        height: 12em;
+        text-decoration: none;
+        color: #EAEAEA;
+        box-shadow: 7.3118px 8.77416px 5.84944px rgba(0, 0, 0, 0.25);
+        transition: transform .6s ease;
+      }
+
+      .cardresources:hover,
+      .cardresources:focus,
+      .cardresources:active {
+        transform: scale(1.03);
+      }
+
+      .cardcontainer h3 {
         font-size: 24px;
       }
 
-      .card p {
+      .cardcontainer p {
         font-size: 20px;
         font-weight: 400;
       }
@@ -196,29 +331,58 @@ export default function Home() {
         text-align: center;
       }
 
-      .socialcontainer li {
-        list-style: none;
-        margin: 6em;
-        transition: transform .3s ease;
-      }
-
-      .social {
-        font-weight: 700;
-      }
-
-      .socialcontainer li:hover,
-      .socialcontainer li:focus,
-      .socialcontainer li:active {
-        transform: scale(1.05);
-      }
-
       .social {
         background: #4C4A63;
         border-radius: 10px;
         padding: 1em;
         margin: 2em;
+        width: max-content;
         height: 1em;
         text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        color: #EAEAEA;
+        box-shadow: 7.3118px 8.77416px 5.84944px rgba(0, 0, 0, 0.25);
+      }
+
+      .media {
+        background: linear-gradient(90deg, #3BBFE8 0%, #3CBFE7 49.29%, #2A85EF 100%);
+        border-radius: 10px;
+        padding: 1em;
+        margin: 2em;
+        width: max-content;
+        height: 1em;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        color: #EAEAEA;
+        box-shadow: 7.3118px 8.77416px 5.84944px rgba(0, 0, 0, 0.25);
+      }
+
+      .beginner {
+        background: linear-gradient(90deg, #B24592 0%, #F15F79 100%);
+        border-radius: 10px;
+        padding: 1em;
+        margin: 2em;
+        width: max-content;
+        height: 1em;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
+        color: #EAEAEA;
+        box-shadow: 7.3118px 8.77416px 5.84944px rgba(0, 0, 0, 0.25);
+      }
+
+      .resources {
+        background: linear-gradient(90deg, #286d80 0%, #71B280 100%);
+        border-radius: 10px;
+        padding: 1em;
+        margin: 2em;
+        width: max-content;
+        height: 1em;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 700;
         color: #EAEAEA;
         box-shadow: 7.3118px 8.77416px 5.84944px rgba(0, 0, 0, 0.25);
       }
