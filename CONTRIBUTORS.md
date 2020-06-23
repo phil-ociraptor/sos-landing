@@ -7,6 +7,7 @@
 - [Example](https://github.com/phil-ociraptor)
 - [Eva](https://github.com/esu2020)
 - [Juston Sky](https://github.com/justonsky)
+- [Aniruddha Pandey](https://github.com/pandevim)
 
 ### UI Team
 
@@ -19,6 +20,7 @@
 
 - [Example](https://github.com/phil-ociraptor)
 - [Van S.](https://github.com/Hi-Van)
+- [Aniruddha Pandey](https://github.com/pandevim)
 
 ## Matchmaking Project
 
