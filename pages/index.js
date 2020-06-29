@@ -6,6 +6,7 @@ export default function Home() {
       <Head>
         <title>Summer of Shipping</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
       </Head>
 
       <main className="inner-container">
@@ -80,11 +81,9 @@ export default function Home() {
           align-items: center;
           font-family: Monaco, monospace;
         }
-
         .inner-container {
           max-width: 800px;
         }
-
         .call-to-action {
           width: 40%;
           padding: 0.5rem;
@@ -92,11 +91,9 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
         }
-
         .call-to-action a {
           margin: 1rem 0;
         }
-
         main {
           padding: 5rem 0;
           flex: 1;
@@ -105,7 +102,6 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-
         footer {
           width: 100%;
           height: 100px;
@@ -114,58 +110,47 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-
         footer img {
           margin-left: 0.5rem;
         }
-
         footer a {
           display: flex;
           justify-content: center;
           align-items: center;
         }
-
         a {
           color: inherit;
           text-decoration: none;
         }
-
         .title a {
           text-decoration: none;
         }
-
         .title a:hover,
         .title a:focus,
         .title a:active {
           text-decoration: underline;
         }
-
         .title {
           color: white;
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
         }
-
         .title,
         .description {
           text-align: center;
         }
-
         .description {
           line-height: 1.4;
           font-size: 1.2rem;
         }
-
         .description a {
           text-decoration: none;
           color: #4dd0e1;
         }
-
         .description a:hover {
           color: white;
         }
-
         code {
           background: #fafafa;
           border-radius: 5px;
@@ -174,17 +159,14 @@ export default function Home() {
           font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
             DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
-
         .grid {
           display: flex;
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
-
         .card {
           margin: 1rem;
           flex-basis: 45%;
@@ -197,28 +179,23 @@ export default function Home() {
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
-
         .card:hover,
         .card:focus,
         .card:active {
           color: #4dd0e1;
         }
-
         .card h3 {
           margin: 0 0 1rem 0;
           font-size: 1.5rem;
         }
-
         .card p {
           margin: 0;
           font-size: 1.25rem;
           line-height: 1.5;
         }
-
         .logo {
           height: 1em;
         }
-
         .button-primary {
             color: rgba(33, 33, 33, 1);
             background-color: rgba(77,208,225, 1);
@@ -227,7 +204,6 @@ export default function Home() {
             font-size: 1.5rem;
             text-align: center;
         }
-
         .button-secondary {
           color: rgba(33, 33, 33, 1);
           background-color: rgba(77,208,225, 1);
@@ -236,20 +212,16 @@ export default function Home() {
           font-size: 1.5rem;
           text-align: center
         }
-
         .button-primary:active,
         .button-primary:focus,
         .button-primary:hover {
           background-color: rgba(77,208,225, .75);
         }
-
-
         @media (max-width: 600px) {
           .grid {
             width: 100%;
             flex-direction: column;
           }
-
           .call-to-action {
             width: 45%;
             flex-direction: column;
@@ -270,7 +242,6 @@ export default function Home() {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
-
         * {
           box-sizing: border-box;
         }
