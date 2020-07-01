@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from "next/head";
+import { DataFetcher, FakeDbStrategy } from "./api";
 
 export default function Home() {
   return (
@@ -9,28 +10,39 @@ export default function Home() {
       </Head>
 
       <main className="inner-container">
-        <h1 className="title">
-          Summer of Shipping
-        </h1>
+        <h1 className="title">Summer of Shipping</h1>
 
-        <p className="description">
-          🦠 Has your internship been cancelled?
-        </p>
+        <p className="description">🦠 Has your internship been cancelled?</p>
 
         <p className="description">
           Are you planning on building anyways, but don't want to do it alone?
         </p>
 
         <p className="description">
-          Then you're in the perfect spot. We're a community of college students and industry mentors who are building this summer. We learn from each other. We meet on Thursdays for demos, presentations, and networking. The end goal is to make you similarly competitive to those who completed internships over the summer. 🚀
+          Then you're in the perfect spot. We're a community of college students
+          and industry mentors who are building this summer. We learn from each
+          other. We meet on Thursdays for demos, presentations, and networking.
+          The end goal is to make you similarly competitive to those who
+          completed internships over the summer. 🚀
         </p>
 
         <div className="call-to-action">
-          <a className="button-primary" href="https://forms.gle/3N3CfqbH6YkM1DF67"> Join us! </a>
+          <a
+            className="button-primary"
+            href="https://forms.gle/3N3CfqbH6YkM1DF67"
+          >
+            {" "}
+            Join us!{" "}
+          </a>
 
-          <a className="button-secondary" href="https://forms.gle/ybJ7pdF5Q3axZbrbA"> Become a Mentor! </a>
+          <a
+            className="button-secondary"
+            href="https://forms.gle/ybJ7pdF5Q3axZbrbA"
+          >
+            {" "}
+            Become a Mentor!{" "}
+          </a>
         </div>
-
 
         <div className="grid">
           <a href="https://forms.gle/3N3CfqbH6YkM1DF67" className="card">
@@ -38,7 +50,10 @@ export default function Home() {
             <p>Build with us this summer! </p>
           </a>
 
-          <a href="https://www.youtube.com/watch?v=tfbaDguurH0" className="card">
+          <a
+            href="https://www.youtube.com/watch?v=tfbaDguurH0"
+            className="card"
+          >
             <h3>Kickoff Video &rarr;</h3>
             <p>Watch the kickoff on YouTube. Slides in the video description</p>
           </a>
@@ -48,10 +63,7 @@ export default function Home() {
             <p>Stay up to date with us on Twitter</p>
           </a>
 
-          <a
-            href="https://forms.gle/ybJ7pdF5Q3axZbrbA"
-            className="card"
-          >
+          <a href="https://forms.gle/ybJ7pdF5Q3axZbrbA" className="card">
             <h3>Become a Mentor &rarr;</h3>
             <p>Experienced dev? Want to help out with Code Reviews?</p>
           </a>
@@ -62,7 +74,8 @@ export default function Home() {
           >
             <h3>Team up &rarr;</h3>
             <p>
-              Looking for collaborators? Find people at all stages of their projects
+              Looking for collaborators? Find people at all stages of their
+              projects
             </p>
           </a>
         </div>
@@ -220,29 +233,28 @@ export default function Home() {
         }
 
         .button-primary {
-            color: rgba(33, 33, 33, 1);
-            background-color: rgba(77,208,225, 1);
-            border-radius: 10px;
-            padding: 10px;
-            font-size: 1.5rem;
-            text-align: center;
+          color: rgba(33, 33, 33, 1);
+          background-color: rgba(77, 208, 225, 1);
+          border-radius: 10px;
+          padding: 10px;
+          font-size: 1.5rem;
+          text-align: center;
         }
 
         .button-secondary {
           color: rgba(33, 33, 33, 1);
-          background-color: rgba(77,208,225, 1);
+          background-color: rgba(77, 208, 225, 1);
           border-radius: 10px;
           padding: 10px;
           font-size: 1.5rem;
-          text-align: center
+          text-align: center;
         }
 
         .button-primary:active,
         .button-primary:focus,
         .button-primary:hover {
-          background-color: rgba(77,208,225, .75);
+          background-color: rgba(77, 208, 225, 0.75);
         }
-
 
         @media (max-width: 600px) {
           .grid {
@@ -254,7 +266,7 @@ export default function Home() {
             width: 45%;
             flex-direction: column;
           }
-          
+
           .call-to-action a {
             margin: 1rem 0;
           }
@@ -276,5 +288,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
