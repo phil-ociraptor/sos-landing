@@ -1,28 +1,30 @@
-const Navbar = () => (
-  <div className="Navigation">
-    <div className="SoS-Text">
-      <h1>SUMMER OF SHIPPING</h1>
-      <img src="Ship Logo.svg" className="SoS-logo" />
-    </div>
-    <div className="Tabs">
-      <a href="/index">
-        HOME
+function Navbar() {
+
+  return (
+    <div className="Navigation">
+      <div className="SoS-Text">
+        <h1>SUMMER OF SHIPPING</h1>
+        <img src="Ship Logo.svg" className="SoS-logo" />
+      </div>
+      <div className="Tabs">
+        <a href="/index">
+          HOME
       </a>
 
-      <a href="https://forms.gle/3N3CfqbH6YkM1DF67">
-        WIKI
+        <a href="https://forms.gle/3N3CfqbH6YkM1DF67">
+          WIKI
       </a>
 
-      <a href="https://forms.gle/3N3CfqbH6YkM1DF67">
-        PROJECTS
+        <a href="https://forms.gle/3N3CfqbH6YkM1DF67">
+          PROJECTS
       </a>
 
-      <a href="https://forms.gle/3N3CfqbH6YkM1DF67">
-        MATCH MAKING
+        <a href="https://forms.gle/3N3CfqbH6YkM1DF67">
+          MATCH MAKING
       </a>
-    </div>
+      </div>
 
-    <style jsx>{`
+      <style jsx>{`
         .Navigation {
         z-index: 1;
         white-space: nowrap;
@@ -76,7 +78,8 @@ const Navbar = () => (
         transform: scale(1.05);
       }
     `}</style>
-  </div>
-);
+    </div>
+  );
+}
 
 export default Navbar;
