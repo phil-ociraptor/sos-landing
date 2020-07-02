@@ -30,13 +30,13 @@ function wiki() {
       <Head>
         <title>Summer of Shipping</title>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"></link>
       </Head>
 
       <main>
-        <img src="undraw_operating_system_4lr6.svg" className="SVG" />
+        <img src="undraw_operating_system_4lr6.svg" className="svg" />
         <Navbar />
-        <div className="Searchbox">
+        <div className="searchbox">
           <form className="search">
             <input type="text" placeholder="Search Wiki.." value={query} onChange={searchInput} />
           </form>
@@ -44,7 +44,7 @@ function wiki() {
 
         <div className="links">
           {linkResult.map(card => {
-            const { title, description, type, link } = card;
+            const { title, description, link } = card;
             return (
               <a key={title} className="card" href={link}>
                 <h3>{title}</h3>
@@ -58,7 +58,7 @@ function wiki() {
 
       <style jsx>{`
 
-      .Searchbox {
+      .searchbox {
         margin-top: 8rem;
         width: 100%;
         text-align: center;
@@ -72,11 +72,11 @@ function wiki() {
         text-align: center;
         border-radius: 30px;
         border-style: hidden;
-        background-color: #4C4A63;
+        background-color: #4c4a63;
         padding: 10px;
         font-size: 24px;
         outline: none;
-        color: #EAEAEA;
+        color: #eaeaea;
       }
 
       .links {
@@ -92,7 +92,7 @@ function wiki() {
         margin: 1em;
         padding: 1.5rem;
         text-align: center;
-        background: #4C4A63;
+        background: #4c4a63;
         color: #c0bfcf;
         word-wrap: break-word;
         text-decoration: none;
@@ -105,7 +105,7 @@ function wiki() {
       .card:hover,
       .card:focus,
       .card:active {
-        background: linear-gradient(90deg, #3BBFE8 0%, #3CBFE7 49.29%, #2A85EF 100%);
+        background: linear-gradient(90deg, #3bbfe8 0%, #3cbfe7 49.29%, #2a85ef 100%);
         transform: scale(1.05);
         box-shadow: none;
         color: white;
@@ -121,7 +121,7 @@ function wiki() {
         line-height: 1.5;
       }
 
-      .SVG {
+      .svg {
         z-index: -1;
         position: fixed;
         width: 55%;
@@ -134,7 +134,7 @@ function wiki() {
       <style jsx global>{`
       body {
         background: #262534;
-        font-family: 'Raleway';
+        font-family: 'Roboto', sans-serif;
       }
       `}
       </style>
