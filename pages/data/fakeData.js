@@ -24,7 +24,7 @@ export const people = [
     twitter: "behance.net",
     linkedin: "gmpg.org",
     img: "http://dummyimage.com/170x123.png/ff4444/ffffff",
-    url: "globo.com",
+    url: "globos.com",
   },
   {
     name: "Rosalinde Casado",
