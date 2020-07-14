@@ -1,5 +1,3 @@
-import { projects, people } from "./fakeData";
-
 export default class DataFetcher {
   constructor(dbStrategy) {
     this.strategy = dbStrategy;
