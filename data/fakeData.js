@@ -1,4 +1,4 @@
-export const people = [
+const people = [
   {
     name: "Herby Prandy",
     email: "hprandy0@wired.com",
@@ -181,7 +181,7 @@ export const people = [
   },
 ];
 
-export const projects = [
+const projects = [
   {
     name: "Sherilyn Howe",
     categories: "IRAs",
@@ -331,3 +331,5 @@ export const projects = [
     collaborators: [people[18], people[17], people[1], people[2]],
   },
 ];
+
+export { people, projects };
