@@ -3,8 +3,7 @@ function Navbar() {
   return (
     <div className="navigation">
       <div className="sos-Text">
-        <h1>SUMMER OF SHIPPING</h1>
-        <img src="Ship Logo.svg" className="sos-logo" />
+        <h1>🚢SUMMER OF SHIPPING </h1>
       </div>
       <div className="tabs">
         <a href="/index">
@@ -29,8 +28,8 @@ function Navbar() {
         padding: 1em;
         width: 100%;
         height: 40px;
-        background: #4c4a63;
-        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+        background: #272727;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
       }
 
       .sos-logo {
@@ -46,8 +45,8 @@ function Navbar() {
 
       .sos-Text h1 {
         font-style: normal;
-        font-weight: 500;
-        font-size: 34px;
+        font-weight: 400;
+        font-size: 36px;
         color: #eaeaea;
       }
 

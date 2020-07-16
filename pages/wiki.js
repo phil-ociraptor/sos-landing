@@ -7,6 +7,12 @@ import React, { useState } from 'react';
 function wiki() {
 
   const [query, setQuery] = useState('');
+  const [test, setTest] = useState('');
+
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    setQuery(test);
+  }
 
   const fuse = new Fuse(links, {
     keys: [
@@ -34,11 +40,11 @@ function wiki() {
       </Head>
 
       <main>
-        <img src="undraw_operating_system_4lr6.svg" className="svg" />
         <Navbar />
         <div className="searchbox">
-          <form className="search">
-            <input type="text" placeholder="Search Wiki.." value={query} onChange={searchInput} />
+          <form className="search" onSubmit={handleSubmit}>
+            <input type="text" placeholder="Search Wiki.." value={test} onChange={e => setTest(e.target.value)} />
+            <input type="submit" value="Search"/>
           </form>
         </div>
 
@@ -59,7 +65,7 @@ function wiki() {
       <style jsx>{`
 
       .searchbox {
-        margin-top: 8rem;
+        margin-top: 16rem;
         width: 100%;
         text-align: center;
       }
@@ -70,13 +76,22 @@ function wiki() {
 
       input {
         text-align: center;
-        border-radius: 30px;
+        margin: .25em;
         border-style: hidden;
-        background-color: #4c4a63;
-        padding: 10px;
+        background-color: #313131;
+        padding: 12px;
         font-size: 24px;
         outline: none;
         color: #eaeaea;
+        cursor: pointer;
+        transition: transform 0.25s ease;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      input:hover,
+      input:focus,
+      input:active {
+        transform: scale(1.02);
       }
 
       .links {
@@ -92,12 +107,11 @@ function wiki() {
         margin: 1em;
         padding: 1.5rem;
         text-align: center;
-        background: #4c4a63;
-        color: #c0bfcf;
+        background: #272727;
+        color: #e0e0e0;
         word-wrap: break-word;
         text-decoration: none;
         text-align: center;
-        border-radius: 15px;
         box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
         transition: transform 0.25s ease;
       }
@@ -105,13 +119,10 @@ function wiki() {
       .card:hover,
       .card:focus,
       .card:active {
-        background: linear-gradient(90deg, #3bbfe8 0%, #3cbfe7 49.29%, #2a85ef 100%);
         transform: scale(1.05);
-        box-shadow: none;
-        color: white;
       }
       .card h3 {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 24px;
       }
       .card p {
@@ -120,20 +131,11 @@ function wiki() {
         font-size: 20px;
         line-height: 1.5;
       }
-
-      .svg {
-        z-index: -1;
-        position: fixed;
-        width: 55%;
-        height: auto;
-        bottom: 1em;
-        right: 1em;
-      }
       `}</style>
 
       <style jsx global>{`
       body {
-        background: #262534;
+        background: #181818;
         font-family: 'Roboto', sans-serif;
       }
       `}
