@@ -14,6 +14,16 @@ function wiki() {
     setQuery(test);
   }
 
+  const media = () => {
+    setQuery('twitter');
+  }
+  const beginner = () => {
+    setQuery('YouTube');
+  }
+  const resource = () => {
+    setQuery('summer');
+  }
+
   const fuse = new Fuse(links, {
     keys: [
       'title',
@@ -46,6 +56,9 @@ function wiki() {
             <input type="text" placeholder="Search Wiki.." value={test} onChange={e => setTest(e.target.value)} />
             <input type="submit" value="Search"/>
           </form>
+          <button className ="btn-tag" onClick={media}>MEDIA</button>
+          <button className ="btn-tag" onClick={beginner}>BEGINNER</button>
+          <button className ="btn-tag" onClick={resource}>RESOURCE</button>
         </div>
 
         <div className="links">
@@ -92,6 +105,26 @@ function wiki() {
       input:focus,
       input:active {
         transform: scale(1.02);
+      }
+
+      .btn-tag {
+        text-align: center;
+        margin: .25em;
+        margin-left: .95em;
+        margin-right: .95em;
+        border-style: hidden;
+        background-color: #292929;
+        padding: 12px;
+        font-size: 20px;
+        outline: none;
+        color: #eaeaea;
+        cursor: pointer;
+        transition: transform 0.25s ease;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn-tag:hover {
+        transform: scale(1.05);
       }
 
       .links {
