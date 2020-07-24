@@ -14,7 +14,7 @@
     {
         "title": "Join us! ",
         "description": "Build with us this summer!",
-        "type": "media",
+        "type": "beginner",
         "link": "https://forms.gle/3N3CfqbH6YkM1DF67"
     },
     {
@@ -26,13 +26,13 @@
     {
         "title": "Become a Mentor ",
         "description": "Experienced dev? Want to help out with Code Reviews?",
-        "type": "media",
+        "type": "beginner",
         "link": "https://forms.gle/ybJ7pdF5Q3axZbrbA"
     },
     {
         "title": "Team up ",
         "description": "Looking for collaborators? Find people at all stages of their projects",
-        "type": "media",
+        "type": "resource",
         "link": "https://docs.google.com/spreadsheets/d/1MdlCGpAAMbPb4VsLJUJLk8zlZ1dM9O_euiw0jFP6AdU/edit?usp=sharing"
     }
 ]

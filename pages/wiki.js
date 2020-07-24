@@ -14,14 +14,17 @@ function wiki() {
     setQuery(test);
   }
 
+  const social = () => {
+    setQuery('social');
+  }
   const media = () => {
-    setQuery('twitter');
+    setQuery('media');
   }
   const beginner = () => {
-    setQuery('YouTube');
+    setQuery('beginner');
   }
   const resource = () => {
-    setQuery('summer');
+    setQuery('resource');
   }
 
   const fuse = new Fuse(links, {
@@ -54,11 +57,14 @@ function wiki() {
         <div className="searchbox">
           <form className="search" onSubmit={handleSubmit}>
             <input type="text" placeholder="Search Wiki.." value={test} onChange={e => setTest(e.target.value)} />
-            <input type="submit" value="Search"/>
+            <input type="submit" value="Search" />
           </form>
-          <button className ="btn-tag" onClick={media}>MEDIA</button>
-          <button className ="btn-tag" onClick={beginner}>BEGINNER</button>
-          <button className ="btn-tag" onClick={resource}>RESOURCE</button>
+          <div className="search-tags">
+          <button className="btn-tag" onClick={social}>SOCIAL</button>
+          <button className="btn-tag" onClick={media}>MEDIA</button>
+          <button className="btn-tag" onClick={beginner}>BEGINNER</button>
+          <button className="btn-tag" onClick={resource}>RESOURCE</button>
+          </div>
         </div>
 
         <div className="links">
@@ -72,19 +78,18 @@ function wiki() {
             )
           })}
         </div>
-
       </main>
 
       <style jsx>{`
 
       .searchbox {
-        margin-top: 16rem;
+        margin-top: 14rem;
         width: 100%;
         text-align: center;
       }
 
       ::placeholder {
-        color: #c7c7c7;
+        color: #b8b8b8;
       }
 
       input {
@@ -107,15 +112,22 @@ function wiki() {
         transform: scale(1.02);
       }
 
+      .search-tags {
+        margin-top: 8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
       .btn-tag {
         text-align: center;
-        margin: .25em;
-        margin-left: .95em;
-        margin-right: .95em;
         border-style: hidden;
         background-color: #292929;
         padding: 12px;
         font-size: 20px;
+        width: 7em;
+        height: 2.5em;
+        margin: .5em;
         outline: none;
         color: #eaeaea;
         cursor: pointer;
@@ -132,7 +144,7 @@ function wiki() {
         align-items: left;
         display: grid;
         grid-template-columns: repeat( auto-fit, 300px );
-        margin-top: 3em;
+        margin-top: 1em;
       }
 
       .card {
@@ -154,10 +166,12 @@ function wiki() {
       .card:active {
         transform: scale(1.05);
       }
+
       .card h3 {
         font-weight: 400;
         font-size: 24px;
       }
+
       .card p {
         margin: 0;
         font-weight: 200;

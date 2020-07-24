@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faGithub, faDiscord } from '@fortawesome/free-brands-svg-icons';
+
 function Navbar() {
 
   return (
@@ -61,12 +64,12 @@ function Navbar() {
         text-decoration: none;
         font-weight: 200;
         color: #eaeaea;
-        transition: transform .6s ease;
+        transition: transform .3s ease;
       }
 
       .tabs a:hover {
         color: #4dd0e1;
-        transform: scale(1.05);
+        transform: scale(1.02);
       }
     `}</style>
     </div>
