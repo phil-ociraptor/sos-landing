@@ -1,6 +1,6 @@
-import PersonsStore from "./personsStore"
-import ProjectsStore from "./projectsStore"
+import PersonsStore from './personsStore'
+import ProjectsStore from './projectsStore'
 
-const stores = {PersonsStore, ProjectsStore}
+const stores = { PersonsStore, ProjectsStore }
 
 export default stores
