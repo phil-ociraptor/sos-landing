@@ -14,8 +14,7 @@
   },
   "lint-staged": {
     "*": [
-      "prettier --check . --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "dependencies": {
