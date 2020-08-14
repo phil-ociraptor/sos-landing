@@ -1,10 +1,9 @@
 import { createContext } from 'react'
-import { ApolloProvider } from '@apollo/client'
+import { ApolloProvider, gql } from '@apollo/client'
 import ProjectsList from '../components/ProjectsList'
 
 import fetch from 'cross-fetch'
 import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
-import { gql } from '@apollo/client'
 
 const client = new ApolloClient({
   link: new HttpLink({
