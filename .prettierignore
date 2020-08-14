@@ -11,4 +11,4 @@ node_modules
 # Lock files
 package-lock.json
 yarn.lock
-.lock
+.env.local
