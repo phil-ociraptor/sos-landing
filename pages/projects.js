@@ -1,15 +1,25 @@
 import { createContext } from 'react'
-import stores from '../stores/'
+import { ApolloProvider, gql } from '@apollo/client'
 import ProjectsList from '../components/ProjectsList'
 
-export const StoreContext = createContext()
-export const StoreProvider = StoreContext.Provider
+import fetch from 'cross-fetch'
+import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client'
+
+const client = new ApolloClient({
+  link: new HttpLink({
+    uri: 'https://sos-showcase.herokuapp.com/v1/graphql',
+    headers: {
+      'x-hasura-access-key': `${process.env.NEXT_PUBLIC_HASURA_ACCESS_KEY}`,
+    },
+    fetch,
+  }),
+  cache: new InMemoryCache(),
+})
 
 export default function ProjectsPage() {
   return (
-    <StoreProvider value={stores}>
-      <h1>Projects List:</h1>
+    <ApolloProvider client={client}>
       <ProjectsList />
-    </StoreProvider>
+    </ApolloProvider>
   )
 }

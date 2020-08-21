@@ -6,3 +6,9 @@ node_modules
 
 # Ignore markups:
 .html
+.md
+
+# Lock files
+package-lock.json
+yarn.lock
+.env.local
